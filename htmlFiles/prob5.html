@@ -6,6 +6,43 @@
     <title>Document</title>
 </head>
 <body>
-    <script href="jsFiles/prob5.js"></script>
+    <p id="demo"></p>
+
+    <script>
+        // QUESTION
+                // Write a function that, 
+                // takes an array of integers as input
+                // itearates over the arra
+                // returns a new array.
+
+                // The returned array should contain the result of raising 2 to the power of the original input element.
+                // For example,([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and 2 ^ 3 = 8.
+                // Use for and forEach and then map to solve this question to see the difference between the three ways
+
+        let array = [1, 2, 3]
+        let arr = [];
+
+        // using for
+
+        // for (let i=0; i<array.length; i++){
+        //     arr += 2**(array[i]) + "\n \n";
+        // }
+
+        // using forEach
+
+        // function powerTwo(item){
+        //     arr += 2**(item) + "\n \n";
+        // }
+        // array.forEach(powerTwo);
+
+        // using .map
+
+        array.map(function(item){
+            return arr += 2**(item) + "\n \n";
+        });
+
+
+        document.getElementById("demo").innerHTML = arr;
+    </script>
 </body>
 </html>
