@@ -1,21 +1,21 @@
 // What is the output of the following JS code segments? and Why?
 
 // a)
-                // var employee = {
-                //     firstName: 'Rawan',
-                //     sayHi: function(){
-                //         console.log("Hi Coach ! " + this.firstName);
-                //     }
-                // }
+                 var employee = {
+                    firstName: 'Rawan',
+                    sayHi: function(){
+                      console.log("Hi Coach ! " + this.firstName);
+                    }
+                }
 
-                // employee.sayHi() // ?
+                 employee.sayHi(); // ?
 
 
 
 // ----> >>> answer 
 // result shown on console::  Hi coach ! Rawan
 // explanation:: console will log the string "Hi Coach !" 
-//               then will log the value of "firstName" of the employee object
+//               then will log the value of "firstName" of the employee object, (i.e. Rawan)
 
 
 

@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <script href="jsFiles/prob8.js"></script>
+    <p id="demo"></p>
+    <script>
+        // QUESTION
+
+                // Use forEach to  Return all the names in the array 
+                //  [“Rawan", "Jafar", "Hind", "Muhammad", "Esraa", “Dareen”] using loops.
+
+        let namesTxt ="";
+        const pupils = ["Rawan", "Jafar", "Hind", "Muhammad", "Esraa", "Dareen"];
+        pupils.forEach(names);
+
+        document.getElementById("demo").innerHTML = namesTxt;
+
+        function names(item){
+            namesTxt += item  + "<br>";
+        }
+
+    </script>
 </body>
 </html>

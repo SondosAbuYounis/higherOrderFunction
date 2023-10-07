@@ -6,6 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <script href="jsFiles/prob12.js"></script>
+    <script>
+        // QUESTION
+
+                // Use reduce()  function to return the longest string in an array of strings.
+                // ["Java", "JavaScript", "Python", "C++", "PHP"]
+
+        const array= ["Java", "JavaScript", "Python", "C++", "PHP"];
+
+       
+        const longestStr = array.reduce((theLongest, currentString) => { 
+            return currentString.length > theLongest.length ? currentString : theLongest;
+        }, array[0]);
+        console.log(longestStr);
+       
+    </script>
 </body>
 </html>
+
+
+
+
+<!-- 
+// function getLongestString(strings) {
+    //     return strings.reduce((longest, currentString) => {
+    //     return currentString.length > longest.length ? currentString : longest;
+    //     }, strings[0]);
+    // }
+    
+    // const strings = ["Java", "JavaScript", "Python", "C++", "PHP"];
+    // const longestString = getLongestString(strings);
+    
+    // console.log(longestString); -->
